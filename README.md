@@ -56,6 +56,8 @@ with open(ruta, "r", encoding="utf-8") as archivo:
             definicion = partes[1]
             definiciones[palabra] = definicion
 ```
+- Las dos librerias
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/64474844-2024-4b57-817e-d93b93902a48)
 
 - Dibujo de hangman en integraz gráfica
 El dibujo se mostrará con una libreria que tenga imagenes predeterminadas y se muestren: 
@@ -69,9 +71,11 @@ boton = tk.Button(image=imagen, command=root.quit)
 boton.pack()
 root.mainloop()
 ```
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/bf7170c7-bf8f-414f-adb6-b54076f214e1)
 
 - Nivel de dificultad: Asociado a la cantidad de intentos para dibujar el ahorcado, cantidad de caracteres de la palabra.
 Lo que se hace es elegir la cantidad de vidas y la cantidad de letras 
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/648c9d49-c83b-44d8-bf01-0d70956e7b2d)
 
 ```ruby
 difi=input("Ingrese la dificultad, facil(1), normal(2), dificil(3), imposible(4); ") # pedimos al usuario la dificultad de acuerdo con el numero ingresado
@@ -88,8 +92,10 @@ difi=input("Ingrese la dificultad, facil(1), normal(2), dificil(3), imposible(4)
         prandom = random.choice(palkeysHard)
         n=1
 ```
-- Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real
+## Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real
 - Poner la palabra entera y que se adivine
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/83c5efc7-7044-4d0d-9dae-5803fd6be15f)
+
 ```ruby
 palabradefe = input(user + ", ingresa una palabra: ").lower() # Se pide una palabra para ver si se adivina directamente
 if palabradefe.lower() == prandom.lower():
@@ -102,6 +108,8 @@ else:
     n -= 1
 ```
 - Saber si hay tildes
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/460bc0b1-5a74-44dc-9649-3d89b4e11589)
+
 ```ruby
 for i in prandom: # Se busca en la palabra a ver si tiene vocales con tilde
       if i in "áéíóú":
@@ -114,6 +122,8 @@ for i in prandom: # Se busca en la palabra a ver si tiene vocales con tilde
       print("La palabra no contiene tildes") # Lo contrario en caso de que no
 ```
 - Poner la primera letra
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/4f4b1742-8cc4-4593-a05f-8d1c186cd7b2)
+
 ```ruby
 x[0] = prandom[0] # Reemplaza la incognita con la letra en la posicion 0
 print(user + ", La palabra de momento es: " + " ".join(x))
@@ -121,11 +131,15 @@ proh5 = True # se cambia la bandera a True parano volver a usar la opción
 
 ```
 - Poner la ultima letra
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/0c6a2e9d-e585-4459-867f-f66a716c9773)
+
 ```ruby
 x[-1] = prandom[-1]  # Reemplaza la incognita con la letra en la posicion -1
 print(user + ", La palabra de momento es: " + " ".join(x))
 ```
 - Poner las vocales
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/1072b69a-b487-4eda-a212-245136cf4008)
+
 ```ruby
 vocales = "aeiouáéíóú"
 for i in range(len(prandom)):
@@ -134,6 +148,8 @@ for i in range(len(prandom)):
         print(user + ", La palabra de momento es: " + " ".join(x)) # Se muestar la palabra
 ```
 - Dar una definición de la palabra
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/0ea1a90d-33d1-4d4d-8725-f2bde0b86924)
+
 ```ruby
 if prandom in definiciones:
     print(definiciones[prandom]) # Se imprime el key y la definición de la misma
@@ -142,6 +158,8 @@ else:
     print("No se encontró la definición de la palabra")
 ```
 - Hacer un menú para interactuar
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/f801cfc7-e833-494a-a0f7-bf35c1afafd2)
+
 ```ruby 
 while n > 0: # Hacemos un menú que se muestra en bucle hasta que se acaben las vida "n" o cuando se adivine la palabra
         print("_-_-_-_ MENÚ _-_-_-_")
@@ -170,20 +188,30 @@ Está al inicio como "Hangman_ProjectS"
 Está al inicio como "Hangman_ProjectMJ"
 
 ```
-# Codigo respuesta al problema planteado
+## Codigo respuesta al problema planteado
 ```ruby
 Está al inicio como "Hangman_Project"
 ```
 
 # Requisitos para uso del codigo
-- El codigo requiere importar dos librerias
+- El codigo requiere importar dos librerias:
+Importamos ambas librerias.
 Ramdom y Tkinder
-- Se necesita descargar
-las imagenes del inicio que estan como archivos .ico
-la base de datos con las palabras y definiciones
-HAY QUE TENER EN CUENTA QUE SE DEBE PONER CORRECTAMENTE LA RUTA EN EL CODIGO PARA QUE FUNCIONE BIEN
+```ruby
+import random
+import tkinter
+```
+Se necesita descargar:
+HAY QUE TENER EN CUENTA QUE SE DEBE PONER CORRECTAMENTE LA RUTA EN EL CODIGO PARA QUE FUNCIONE BIEN, 
+a continuación se ponen los ejemplos usados en mi codigo.
+- Las imagenes del inicio que estan como archivos .ico
+```ruby
+imagen = ImageTk.PhotoImage(Image.open(r"C:\Users\PC\downloads\ss1.ico"))
+```
+- la base de datos con las palabras y definiciones
+```ruby
+ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" 
+with open(ruta, "r", encoding="utf-8") as archivo:
+```
 #### Sin ser más eso es toda la información sobre nuestro codigo
-
-
-
 #### Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹
