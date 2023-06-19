@@ -75,12 +75,14 @@ boton = tk.Button(image=imagen, command=root.quit)
 boton.pack()
 root.mainloop()
 ```
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/bf7170c7-bf8f-414f-adb6-b54076f214e1)
 
 
 
 - Nivel de dificultad: Asociado a la cantidad de intentos para dibujar el ahorcado, cantidad de caracteres de la palabra.
 Lo que se hace es elegir la cantidad de vidas y la cantidad de letras 
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/648c9d49-c83b-44d8-bf01-0d70956e7b2d)
 
 ```ruby
