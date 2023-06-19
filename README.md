@@ -1,12 +1,12 @@
-# **Hangman_Project**
+# :musical_note: **Hangman_Project** :notes:
 Proyecto del curso de programación Universidad Nacional de Colombia, Brayan Ortiz y Laura de la rosa.
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/2b5065ce-a8b4-46b0-a619-21b904e05cbf)
 
-# **Proceso de codificación y explicación del codigo**
-## **Problemas**
+# :snowflake: **Proceso de codificación y explicación del codigo** :snowman:
+## :zap: **Problemas** :zap:
 - El objetivo era hacer un codigo del ahorcado en python y se logró con varias partes
-### Codigo principal
+### :maple_leaf: Codigo principal :maple_leaf:
 - El codigo principal es el hangman en el que se piden letras para adivinar la palabra dada
 ```ruby
 def ahorcado(prandom, user):
@@ -42,7 +42,7 @@ prandom = "palabra"
 ahorcado(prandom)
 
 ```
-### **Evolución del codigo**
+### :cactus: **Evolución del codigo** :cactus:
 - Base de datos de al menos 1000 palabras
 El archivo se encuentra al inicio y se menciona en las cosas necesarias para poder usar el codigo, es un archivo .txt en el cual hay poco mas de 1000 palabras en español con su definición, y se ingresa al mismo para ser usado en el codigo como diccionario
 ```ruby
@@ -100,7 +100,7 @@ difi=input("Ingrese la dificultad, facil(1), normal(2), dificil(3), imposible(4)
         prandom = random.choice(palkeysHard)
         n=1
 ```
-## **Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real**
+##  :herb: **Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real** :herb:
 - Poner la palabra entera y que se adivine
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/83c5efc7-7044-4d0d-9dae-5803fd6be15f)
@@ -206,26 +206,26 @@ while n > 0: # Hacemos un menú que se muestra en bucle hasta que se acaben las 
         print("9: Salir")
         opcion = input("Elige una opción: ") # Pedimos un valor para poder usar las opciones
 ```
-# **Codigos**
-## **Codigo para jugar solo con la base de datos proporcionada**
+# :moyai: **Codigos** :rocket:
+##  :four_leaf_clover: **Codigo para jugar solo con la base de datos proporcionada** :four_leaf_clover:
 
 ```ruby
 Está al inicio como "Hangman_ProjectS"
 ```
 
 
-## **Codigo para jugar y que otra persona elija la palabra**
+## :hotsprings: **Codigo para jugar y que otra persona elija la palabra** :izakaya_lantern:
 
 ```ruby
 Está al inicio como "Hangman_ProjectMJ"
 
 ```
-## **Codigo respuesta al problema planteado**
+## :crossed_flags: **Codigo respuesta al problema planteado** :checkered_flag:
 ```ruby
 Está al inicio como "Hangman_Project"
 ```
 
-# **Requisitos para uso del codigo**
+# :gem: **Requisitos para uso del codigo** :gem:
 - El codigo requiere importar dos librerias:
 Importamos ambas librerias.
 Ramdom y Tkinder
@@ -233,7 +233,7 @@ Ramdom y Tkinder
 import random
 import tkinter
 ```
-Se necesita descargar:
+# :trophy: Se necesita descargar: :trophy:
 HAY QUE TENER EN CUENTA QUE SE DEBE PONER CORRECTAMENTE LA RUTA EN EL CODIGO PARA QUE FUNCIONE BIEN, 
 a continuación se ponen los ejemplos usados en mi codigo.
 - Las imagenes del inicio que estan como archivos .ico
@@ -245,5 +245,5 @@ imagen = ImageTk.PhotoImage(Image.open(r"C:\Users\PC\downloads\ss1.ico"))
 ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" 
 with open(ruta, "r", encoding="utf-8") as archivo:
 ```
-#### **Sin ser más eso es toda la información sobre nuestro codigo**
-#### *Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹*
+#### **Sin ser más eso es toda la información sobre nuestro codigo** :green_heart:
+#### *Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹* :smiley:
