@@ -250,7 +250,7 @@ with open(ruta, "r", encoding="utf-8") as archivo:
 ## :globe_with_meridians: Instrucciones en el juego :crystal_ball:
 
 
-- **Nombre**
+- :space_invader:**Nombre** :space_invader:
 
 Pide al usuario una nombre para posteriormente usarlo para referirse al user.
 
@@ -258,7 +258,7 @@ Pide al usuario una nombre para posteriormente usarlo para referirse al user.
 
 
 
-- **Opciones de juego**
+- :video_game: **Opciones de juego** :video_game:
 
 Pide al usuario la manera en la que se quiere jugar, hay dos opciones, dos jugadores y solo.
 
@@ -266,7 +266,7 @@ Pide al usuario la manera en la que se quiere jugar, hay dos opciones, dos jugad
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/3f767d69-5979-497f-9482-99be17637ba6)
 
 
-- **Dos jugadores**
+- :shipit: **Dos jugadores** :shipit:
 
 Si se selecciona esta opción(de hecho tiene su codigo individual), un jugador le pone las condiciones al otro para jugar, le pide de hecho:
 
@@ -281,7 +281,7 @@ La cantidad de intentos
 
 
 
-- **Solo**
+- :clubs: **Solo** :clubs: 
 
 Con esta opción lo que se hace es que la palabra se da de la base de datos, y se pide la dificultad, sabiendo que:
 
@@ -293,7 +293,7 @@ Imposible: 1 intento, palabras 6 letras en adelante.
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/85fff61c-4fbb-471a-8c61-d23fb14e6915)
 
 
-- **Menú**
+- :globe_with_meridians: **Menú** :globe_with_meridians:
 
 Se muestra el panel con todas las opciones y comodines que se pueden usar.
 
@@ -301,7 +301,7 @@ Se muestra el panel con todas las opciones y comodines que se pueden usar.
 
 
 
-- **Tildes**
+-  :ear_of_rice: **Tildes** :ear_of_rice:
 
 Opción optenida luego de elegir el número 3, se dice si exiten o no exiten tildes en la palabra.
 
@@ -309,7 +309,7 @@ Opción optenida luego de elegir el número 3, se dice si exiten o no exiten til
 
 
 
-- **Adivinar letra**
+- :cyclone: **Adivinar letra** :cyclone:
 
 Opción optenida luego de elegir el número 1, permite poner una letra y ver si se adivina en la palabra.
 
@@ -317,7 +317,7 @@ Opción optenida luego de elegir el número 1, permite poner una letra y ver si 
 
 
 
-- **Poner palabra toda falla**
+- :cloud: **Poner palabra toda falla** :cloud:
 
 Opción optenida luego de elegir el número 2, se puede adivinar toda la palabra en un solo intento.
 
@@ -325,7 +325,7 @@ Opción optenida luego de elegir el número 2, se puede adivinar toda la palabra
 
 
 
-- **Letra dada por alguno de los comodines**
+- :star: **Letra dada por alguno de los comodines** :star:
 
 Opción optenida luego de elegir los números del 4 al 7, son comodines para elegir una de las letras de la palabra.
 
@@ -333,21 +333,21 @@ Opción optenida luego de elegir los números del 4 al 7, son comodines para ele
 
 
 
-- **Definición**
+- :sparkles: **Definición** :sparkles: 
 
 Opción optenida luego de elegir el número 8, nos da una definición de la palabra que estamos adivinando.
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/53ff501e-3fb9-4351-8e51-9d7f591a05b1)
 
 
-- **Salir del juego**
+-  :dizzy: **Salir del juego**  :dizzy:
 
 Opción optenida luego de elegir el número 9, se sale del paenl.
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/5d44ec1f-a39c-41ae-a455-7aa6a78da5fb)
 
 
-- **En caso de fallar** 
+- :star2: **En caso de fallar** :star2:
 
 En caso de perder intentos se iran poniendo imagenes hasta llegar a la del hangman, la que se ve acontinuación.
 
@@ -356,7 +356,7 @@ En caso de perder intentos se iran poniendo imagenes hasta llegar a la del hangm
 
 
 
-- **Palabra adivinada**
+- :boom: **Palabra adivinada** :boom:
 
 Mensaje mostrado al adivinar la palabra, muestra a parte un score que depende de los comodines usados.
 
@@ -364,5 +364,5 @@ Mensaje mostrado al adivinar la palabra, muestra a parte un score que depende de
 
 
 
-#### **Sin ser más eso es toda la información sobre nuestro codigo** :green_heart:
+####  :computer: **Sin ser más eso es toda la información sobre nuestro codigo** :green_heart:
 #### *Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹* :smiley:
