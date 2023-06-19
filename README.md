@@ -45,6 +45,10 @@ ahorcado(prandom)
 ### :cactus: **Evolución del codigo** :cactus:
 - Base de datos de al menos 1000 palabras
 El archivo se encuentra al inicio y se menciona en las cosas necesarias para poder usar el codigo, es un archivo .txt en el cual hay poco mas de 1000 palabras en español con su definición, y se ingresa al mismo para ser usado en el codigo como diccionario
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/bf7170c7-bf8f-414f-adb6-b54076f214e1)
+
+
 ```ruby
 ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" # Se abre el archivo y se vuelve un diccionario el contenido
 definiciones = {}
@@ -75,9 +79,6 @@ boton = tk.Button(image=imagen, command=root.quit)
 boton.pack()
 root.mainloop()
 ```
-
-![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/bf7170c7-bf8f-414f-adb6-b54076f214e1)
-
 
 
 - Nivel de dificultad: Asociado a la cantidad de intentos para dibujar el ahorcado, cantidad de caracteres de la palabra.
@@ -245,5 +246,123 @@ imagen = ImageTk.PhotoImage(Image.open(r"C:\Users\PC\downloads\ss1.ico"))
 ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" 
 with open(ruta, "r", encoding="utf-8") as archivo:
 ```
+
+## :globe_with_meridians: Instrucciones en el juego :crystal_ball:
+
+
+- **Nombre**
+
+Pide al usuario una nombre para posteriormente usarlo para referirse al user.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/c8a4b7ae-f16d-49d3-bbb7-f203394ef4a7)
+
+
+
+- **Opciones de juego**
+
+Pide al usuario la manera en la que se quiere jugar, hay dos opciones, dos jugadores y solo.
+
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/3f767d69-5979-497f-9482-99be17637ba6)
+
+
+- **Dos jugadores**
+
+Si se selecciona esta opción(de hecho tiene su codigo individual), un jugador le pone las condiciones al otro para jugar, le pide de hecho:
+
+La palabra
+
+la definición
+
+La cantidad de intentos
+
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/376d8e4d-c835-4f0f-a4a6-c00011bad6ac)
+
+
+
+- **Solo**
+
+Con esta opción lo que se hace es que la palabra se da de la base de datos, y se pide la dificultad, sabiendo que:
+
+Facil: 8 intentos, palabras con hasta 5 letras;
+Medio: 6 intentos, palabras con 5 o 6 letras;
+Dificil: 4 intentos, palabras 6 letras en adelante;
+Imposible: 1 intento, palabras 6 letras en adelante.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/85fff61c-4fbb-471a-8c61-d23fb14e6915)
+
+
+- **Menú**
+
+Se muestra el panel con todas las opciones y comodines que se pueden usar.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/21662824-32b4-44ad-932e-ede1441a4f7c)
+
+
+
+- **Tildes**
+
+Opción optenida luego de elegir el número 3, se dice si exiten o no exiten tildes en la palabra.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/cf0a8779-b9ac-4a00-ac23-c1b4b12c93db)
+
+
+
+- **Adivinar letra**
+
+Opción optenida luego de elegir el número 1, permite poner una letra y ver si se adivina en la palabra.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/98484529-7a30-44df-a404-2fc25d53e8dd)
+
+
+
+- **Poner palabra toda falla**
+
+Opción optenida luego de elegir el número 2, se puede adivinar toda la palabra en un solo intento.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/68c94220-0872-4e18-872a-897160a86d50)
+
+
+
+- **Letra dada por alguno de los comodines**
+
+Opción optenida luego de elegir los números del 4 al 7, son comodines para elegir una de las letras de la palabra.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/25278205-c6c7-4327-a08a-a3cc77a4e595)
+
+
+
+- **Definición**
+
+Opción optenida luego de elegir el número 8, nos da una definición de la palabra que estamos adivinando.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/53ff501e-3fb9-4351-8e51-9d7f591a05b1)
+
+
+- **Salir del juego**
+
+Opción optenida luego de elegir el número 9, se sale del paenl.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/5d44ec1f-a39c-41ae-a455-7aa6a78da5fb)
+
+
+- **En caso de fallar** 
+
+En caso de perder intentos se iran poniendo imagenes hasta llegar a la del hangman, la que se ve acontinuación.
+
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/33930c12-05e0-4574-833c-dfb8bb760b20)
+
+
+
+- **Palabra adivinada**
+
+Mensaje mostrado al adivinar la palabra, muestra a parte un score que depende de los comodines usados.
+
+![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/7fc8b1fe-cc3b-49d3-8b14-00a57109eacc)
+
+
+
 #### **Sin ser más eso es toda la información sobre nuestro codigo** :green_heart:
 #### *Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹* :smiley:
