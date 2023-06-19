@@ -1,10 +1,10 @@
-# Hangman_Project
+# **Hangman_Project**
 Proyecto del curso de programación Universidad Nacional de Colombia, Brayan Ortiz y Laura de la rosa.
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/2b5065ce-a8b4-46b0-a619-21b904e05cbf)
 
-# Proceso de codificación y explicación del codigo
-## Problemas
+# **Proceso de codificación y explicación del codigo**
+## **Problemas**
 - El objetivo era hacer un codigo del ahorcado en python y se logró con varias partes
 ### Codigo principal
 - El codigo principal es el hangman en el que se piden letras para adivinar la palabra dada
@@ -42,7 +42,7 @@ prandom = "palabra"
 ahorcado(prandom)
 
 ```
-### Evolución del codigo
+### **Evolución del codigo**
 - Base de datos de al menos 1000 palabras
 El archivo se encuentra al inicio y se menciona en las cosas necesarias para poder usar el codigo, es un archivo .txt en el cual hay poco mas de 1000 palabras en español con su definición, y se ingresa al mismo para ser usado en el codigo como diccionario
 ```ruby
@@ -100,7 +100,7 @@ difi=input("Ingrese la dificultad, facil(1), normal(2), dificil(3), imposible(4)
         prandom = random.choice(palkeysHard)
         n=1
 ```
-## Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real
+## **Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real**
 - Poner la palabra entera y que se adivine
 
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/83c5efc7-7044-4d0d-9dae-5803fd6be15f)
@@ -206,26 +206,26 @@ while n > 0: # Hacemos un menú que se muestra en bucle hasta que se acaben las 
         print("9: Salir")
         opcion = input("Elige una opción: ") # Pedimos un valor para poder usar las opciones
 ```
-# Codigos 
-## Codigo para jugar solo con la base de datos proporcionada
+# **Codigos**
+## **Codigo para jugar solo con la base de datos proporcionada**
 
 ```ruby
 Está al inicio como "Hangman_ProjectS"
 ```
 
 
-## Codigo para jugar y que otra persona elija la palabra
+## **Codigo para jugar y que otra persona elija la palabra**
 
 ```ruby
 Está al inicio como "Hangman_ProjectMJ"
 
 ```
-## Codigo respuesta al problema planteado
+## **Codigo respuesta al problema planteado**
 ```ruby
 Está al inicio como "Hangman_Project"
 ```
 
-# Requisitos para uso del codigo
+# **Requisitos para uso del codigo**
 - El codigo requiere importar dos librerias:
 Importamos ambas librerias.
 Ramdom y Tkinder
@@ -245,5 +245,5 @@ imagen = ImageTk.PhotoImage(Image.open(r"C:\Users\PC\downloads\ss1.ico"))
 ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" 
 with open(ruta, "r", encoding="utf-8") as archivo:
 ```
-#### Sin ser más eso es toda la información sobre nuestro codigo
-#### Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹
+#### **Sin ser más eso es toda la información sobre nuestro codigo**
+#### *Creditos Duvay Ortiz :tulip: y Laura De La Rosa 🌹*
