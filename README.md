@@ -46,7 +46,7 @@ ahorcado(prandom)
 - Base de datos de al menos 1000 palabras
 El archivo se encuentra al inicio y se menciona en las cosas necesarias para poder usar el codigo, es un archivo .txt en el cual hay poco mas de 1000 palabras en español con su definición, y se ingresa al mismo para ser usado en el codigo como diccionario
 ```ruby
-ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt"
+ruta = r"C:\Users\PC\OneDrive\Documents\palesp.txt" # Se abre el archivo y se vuelve un diccionario el contenido
 definiciones = {}
 with open(ruta, "r", encoding="utf-8") as archivo:
     for linea in archivo:
@@ -56,7 +56,11 @@ with open(ruta, "r", encoding="utf-8") as archivo:
             definicion = partes[1]
             definiciones[palabra] = definicion
 ```
+
+
 - Las dos librerias
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/64474844-2024-4b57-817e-d93b93902a48)
 
 - Dibujo de hangman en integraz gráfica
@@ -72,6 +76,8 @@ boton.pack()
 root.mainloop()
 ```
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/bf7170c7-bf8f-414f-adb6-b54076f214e1)
+
+
 
 - Nivel de dificultad: Asociado a la cantidad de intentos para dibujar el ahorcado, cantidad de caracteres de la palabra.
 Lo que se hace es elegir la cantidad de vidas y la cantidad de letras 
@@ -94,7 +100,11 @@ difi=input("Ingrese la dificultad, facil(1), normal(2), dificil(3), imposible(4)
 ```
 ## Eventualmente agregamos varias ayudas que son usuales en un juego del ahorcado en la vida real
 - Poner la palabra entera y que se adivine
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/83c5efc7-7044-4d0d-9dae-5803fd6be15f)
+
+
+
 
 ```ruby
 palabradefe = input(user + ", ingresa una palabra: ").lower() # Se pide una palabra para ver si se adivina directamente
@@ -108,7 +118,11 @@ else:
     n -= 1
 ```
 - Saber si hay tildes
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/460bc0b1-5a74-44dc-9649-3d89b4e11589)
+
+
 
 ```ruby
 for i in prandom: # Se busca en la palabra a ver si tiene vocales con tilde
@@ -122,7 +136,10 @@ for i in prandom: # Se busca en la palabra a ver si tiene vocales con tilde
       print("La palabra no contiene tildes") # Lo contrario en caso de que no
 ```
 - Poner la primera letra
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/4f4b1742-8cc4-4593-a05f-8d1c186cd7b2)
+
 
 ```ruby
 x[0] = prandom[0] # Reemplaza la incognita con la letra en la posicion 0
@@ -131,14 +148,21 @@ proh5 = True # se cambia la bandera a True parano volver a usar la opción
 
 ```
 - Poner la ultima letra
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/0c6a2e9d-e585-4459-867f-f66a716c9773)
+
 
 ```ruby
 x[-1] = prandom[-1]  # Reemplaza la incognita con la letra en la posicion -1
 print(user + ", La palabra de momento es: " + " ".join(x))
 ```
 - Poner las vocales
+
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/1072b69a-b487-4eda-a212-245136cf4008)
+
 
 ```ruby
 vocales = "aeiouáéíóú"
@@ -148,7 +172,10 @@ for i in range(len(prandom)):
         print(user + ", La palabra de momento es: " + " ".join(x)) # Se muestar la palabra
 ```
 - Dar una definición de la palabra
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/0ea1a90d-33d1-4d4d-8725-f2bde0b86924)
+
 
 ```ruby
 if prandom in definiciones:
@@ -158,7 +185,10 @@ else:
     print("No se encontró la definición de la palabra")
 ```
 - Hacer un menú para interactuar
+
+
 ![image](https://github.com/DuvayOrtiz/Hangman_Project/assets/124726079/f801cfc7-e833-494a-a0f7-bf35c1afafd2)
+
 
 ```ruby 
 while n > 0: # Hacemos un menú que se muestra en bucle hasta que se acaben las vida "n" o cuando se adivine la palabra
